@@ -1,4 +1,4 @@
-package PACKAGE_NAME;
-
 public interface LibraryUser {
+    void registerAccount();
+    void requestBook();
 }
