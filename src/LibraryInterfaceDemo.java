@@ -1,15 +1,21 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
+public class LibraryInterfaceDemo {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Test case #1: KidUser
+        KidUser kid1 = new KidUser(10, "Kids");
+        kid1.registerAccount();
+        kid1.requestBook();
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        KidUser kid2 = new KidUser(18, "Fiction");
+        kid2.registerAccount();
+        kid2.requestBook();
+
+        // Test case #2: AdultUser
+        AdultUser adult1 = new AdultUser(5, "Kids");
+        adult1.registerAccount();
+        adult1.requestBook();
+
+        AdultUser adult2 = new AdultUser(23, "Fiction");
+        adult2.registerAccount();
+        adult2.requestBook();
     }
 }
